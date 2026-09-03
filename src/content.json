@@ -92,13 +92,13 @@
         "items": [
           {
             "icon": "map",
-            "title": "More city, less time",
-            "text": "An hour on foot gets you a few streets. Running gets you the old town, the lake and a viewpoint — and back before your first meeting."
+            "title": "Your training and the city at once",
+            "text": "Holiday or business trip: your run doesn't get cancelled just because you're away from home. One hour gives you the old town, the lakeshore and a viewpoint — and back before your first meeting."
           },
           {
             "icon": "user",
-            "title": "A local, not a script",
-            "text": "Born and based in Lucerne. You get the stories, the shortcuts, and an honest answer when you ask where people who live here actually eat."
+            "title": "A local who knows the route",
+            "text": "Born and based in Lucerne. Nothing to plan, nothing to look up, no map to read: distance, surface and elevation are settled. Plus the stories, and an honest answer when you ask where people who live here actually eat."
           },
           {
             "icon": "users",
@@ -191,12 +191,6 @@
           "language": "Preferred language on the run",
           "message": "Anything I should know?",
           "message_ph": "First time in Lucerne? Injury to work around? No running shoes with you? Tell me here.",
-          "giveaway": "Pick your finisher treat",
-          "giveaway_options": [
-            "Swiss chocolate",
-            "Local energy bar",
-            "Mini carabiner"
-          ],
           "consent": "I agree that my details may be used to organise this run. See the",
           "consent_link": "privacy notice",
           "submit": "Send request",
@@ -231,7 +225,7 @@
         "heading": "Your guide",
         "name": "Hi, I'm Philippe",
         "text": "I'm a runner from Lucerne — trails, city loops, and a weakness for hills that look worse than they are. Off the road you'll find me playing padel or on a mountain bike. Born and based here, I know the streets, the climbs, and the corners that never make it onto a map.",
-        "text_2": "My idea is simple: give runners of every level, age and background a free, genuinely enjoyable way to see this city together. No tour-guide voice, no flag in the air. Just a run with someone who knows the place.",
+        "text_2": "My vision is simple: give runners of every level, age and background a free, genuinely enjoyable way to see this city together. No tour-guide voice, no flag in the air. Just a run with someone who knows the place.",
         "languages_label": "Runs are guided in",
         "languages_value": "English, German, Swiss German and French",
         "instagram_label": "Follow the runs on Instagram"
@@ -391,13 +385,13 @@
         "items": [
           {
             "icon": "map",
-            "title": "Mehr Stadt in weniger Zeit",
-            "text": "Zu Fuss schaffst du in einer Stunde ein paar Gassen. Laufend schaffst du Altstadt, See und einen Aussichtspunkt – und bist vor dem ersten Termin zurück."
+            "title": "Training und Stadt in einem",
+            "text": "Ferien oder Businesstrip: dein Lauf fällt nicht aus, nur weil du nicht zu Hause bist. In einer Stunde Altstadt, Seeufer und ein Aussichtspunkt – und du bist vor dem ersten Termin zurück."
           },
           {
             "icon": "user",
-            "title": "Ein Einheimischer, kein Reiseführertext",
-            "text": "In Luzern geboren, in Luzern zuhause. Du bekommst die Geschichten, die Abkürzungen und eine ehrliche Antwort auf die Frage, wo die Leute essen, die hier wohnen."
+            "title": "Ein Einheimischer, der die Route kennt",
+            "text": "In Luzern geboren, in Luzern zuhause. Du planst nichts, suchst nichts und liest keine Karte: Distanz, Untergrund und Höhenmeter stehen fest. Dazu die Geschichten und eine ehrliche Antwort, wo die Leute essen, die hier wohnen."
           },
           {
             "icon": "users",
@@ -490,12 +484,6 @@
           "language": "Sprache während des Runs",
           "message": "Gibt es etwas, das ich wissen sollte?",
           "message_ph": "Zum ersten Mal in Luzern? Eine Verletzung, auf die ich achten soll? Keine Laufschuhe dabei? Schreib es hier.",
-          "giveaway": "Wähle dein Finisher-Zvieri",
-          "giveaway_options": [
-            "Schweizer Schokolade",
-            "Lokaler Powerriegel",
-            "Mini-Karabiner"
-          ],
           "consent": "Ich bin einverstanden, dass meine Angaben zur Organisation dieses Runs verwendet werden. Siehe",
           "consent_link": "Datenschutzerklärung",
           "submit": "Anfrage senden",
@@ -530,7 +518,7 @@
         "heading": "Dein Guide",
         "name": "Hallo, ich bin Philippe",
         "text": "Ich bin Läufer aus Luzern – Trails, Stadtrunden und eine Schwäche für Anstiege, die schlimmer aussehen als sie sind. Wenn ich nicht laufe, findest du mich beim Padel oder auf dem Mountainbike. Hier geboren und zuhause, kenne ich die Strassen, die Steigungen und die Ecken, die es auf keine Karte schaffen.",
-        "text_2": "Meine Idee ist einfach: Läuferinnen und Läufern jeden Levels, Alters und Hintergrunds eine kostenlose und wirklich unterhaltsame Art zu bieten, diese Stadt gemeinsam zu entdecken. Keine Reiseleiterstimme, kein Fähnchen in der Luft. Einfach eine Runde mit jemandem, der sich auskennt.",
+        "text_2": "Meine Vision ist einfach: Läuferinnen und Läufern jeden Levels, Alters und Hintergrunds eine kostenlose und wirklich unterhaltsame Art zu bieten, diese Stadt gemeinsam zu entdecken. Keine Reiseleiterstimme, kein Fähnchen in der Luft. Einfach eine Runde mit jemandem, der sich auskennt.",
         "languages_label": "Geführt wird auf",
         "languages_value": "Englisch, Deutsch, Schweizerdeutsch und Französisch",
         "instagram_label": "Die Runs auf Instagram verfolgen"
@@ -690,13 +678,13 @@
         "items": [
           {
             "icon": "map",
-            "title": "Plus de ville, moins de temps",
-            "text": "À pied, une heure suffit pour quelques ruelles. En courant, vous couvrez la vieille ville, le lac et un point de vue – et vous rentrez avant votre premier rendez-vous."
+            "title": "Le sport et la ville d'un seul coup",
+            "text": "Vacances ou voyage d'affaires : votre course ne tombe pas à l'eau parce que vous n'êtes pas chez vous. En une heure, la vieille ville, les rives du lac et un point de vue – et vous rentrez avant votre premier rendez-vous."
           },
           {
             "icon": "user",
-            "title": "Un vrai Lucernois, pas un texte appris",
-            "text": "Né et installé à Lucerne. Vous aurez les histoires, les raccourcis et une réponse honnête quand vous demanderez où mangent vraiment les gens d'ici."
+            "title": "Un Lucernois qui connaît le parcours",
+            "text": "Né et installé à Lucerne. Rien à planifier, rien à chercher, aucune carte à lire : distance, revêtement et dénivelé sont fixés. Avec, en prime, les histoires et une réponse honnête quand vous demanderez où mangent vraiment les gens d'ici."
           },
           {
             "icon": "users",
@@ -789,12 +777,6 @@
           "language": "Langue souhaitée pendant la course",
           "message": "Quelque chose que je devrais savoir ?",
           "message_ph": "Première fois à Lucerne ? Une blessure à ménager ? Pas de chaussures de course avec vous ? Dites-le ici.",
-          "giveaway": "Choisissez votre récompense d'arrivée",
-          "giveaway_options": [
-            "Chocolat suisse",
-            "Barre énergétique locale",
-            "Mini-mousqueton"
-          ],
           "consent": "J'accepte que mes données soient utilisées pour organiser cette course. Voir la",
           "consent_link": "politique de confidentialité",
           "submit": "Envoyer la demande",
@@ -829,7 +811,7 @@
         "heading": "Votre guide",
         "name": "Bonjour, je suis Philippe",
         "text": "Je suis coureur, originaire de Lucerne – trails, boucles urbaines et un faible pour les montées qui font plus peur qu'elles ne font mal. Quand je ne cours pas, je joue au padel ou je pédale en VTT. Né et installé ici, je connais les rues, les côtes et les recoins qui ne figurent sur aucune carte.",
-        "text_2": "Mon idée est simple : offrir aux coureurs de tous niveaux, âges et horizons une façon gratuite et réellement agréable de découvrir cette ville ensemble. Pas de voix de guide touristique, pas de fanion en l'air. Juste une course avec quelqu'un qui connaît l'endroit.",
+        "text_2": "Ma vision est simple : offrir aux coureurs de tous niveaux, âges et horizons une façon gratuite et réellement agréable de découvrir cette ville ensemble. Pas de voix de guide touristique, pas de fanion en l'air. Juste une course avec quelqu'un qui connaît l'endroit.",
         "languages_label": "Les courses sont guidées en",
         "languages_value": "anglais, allemand, suisse allemand et français",
         "instagram_label": "Suivre les courses sur Instagram"

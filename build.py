@@ -582,11 +582,6 @@ def join_section(cfg, content, t, lang, base):
         for tour in content["tours"]
     )
 
-    giveaways = "\n".join(
-        f"""            <label class="chip"><input type="radio" name="giveaway" value="{E(g)}"{' checked' if n == 0 else ''} /><span>{E(g)}</span></label>"""
-        for n, g in enumerate(f["giveaway_options"])
-    )
-
     lang_options = "\n".join(
         f'            <option value="{L}">{E(content["languages"][L]["lang_name"])}</option>'
         for L in LANGS
@@ -653,12 +648,6 @@ def join_section(cfg, content, t, lang, base):
               <select id="flang" name="language">
 {lang_options}
               </select>
-            </div>
-          </div>
-          <div class="field">
-            <span class="fieldset-label" id="giveaway-label">{E(f['giveaway'])}</span>
-            <div class="chip-row" role="radiogroup" aria-labelledby="giveaway-label">
-{giveaways}
             </div>
           </div>
           <div class="field">
