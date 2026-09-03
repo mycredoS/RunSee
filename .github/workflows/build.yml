@@ -1,0 +1,51 @@
+# Baut die Seite auf GitHub selbst, sobald sich etwas in src/ oder an build.py
+# aendert. So laesst sich der Inhalt direkt auf github.com bearbeiten - auch
+# vom Handy - ohne Python auf dem eigenen Rechner.
+#
+# Der Filter unten sorgt dafuer, dass der Rueckschreib-Commit den Lauf nicht
+# erneut ausloest: er beruehrt nur erzeugte Dateien, nie src/.
+
+name: Seite bauen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'build.py'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seite-bauen
+  cancel-in-progress: false
+
+jobs:
+  bauen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository holen
+        uses: actions/checkout@v4
+
+      - name: Python bereitstellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Seiten erzeugen
+        run: python3 build.py
+
+      - name: Ergebnis zurueckschreiben
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Keine Aenderungen an den erzeugten Dateien."
+          else
+            git commit -m "Seite neu gebaut (automatisch)"
+            git push
+          fi
