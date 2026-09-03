@@ -1,0 +1,212 @@
+/* ==========================================================================
+   THEME 02 — TEMPO
+   Weiterentwicklung der Logo-Option „Tempo" (Wortmarke mit Speed-Linien).
+   Redaktionell, kantig, hoher Kontrast. Tinte, Signal-Orange, Weiss.
+   Grosse Versalien, schmale Linien, kaum Radien. Bewegung durch Typo.
+   ========================================================================== */
+
+:root {
+  /* Markenfarben aus der Logo-Vorlage */
+  --ink-black:   #181613;
+  --ink-800:     #26221d;
+  --signal:      #ff5630;
+  --signal-deep: #e63f1b;
+  --paper:       #ffffff;
+  --paper-warm:  #f6f4f1;
+  --paper-dim:   #edeae5;
+
+  /* Flächen */
+  --bg:          var(--paper);
+  --surface:     var(--paper);
+  --surface-alt: var(--paper-warm);
+  --card-bg:     var(--paper);
+  --card-border: 1.5px solid var(--ink-black);
+  --input-bg:    var(--paper);
+  --dark-panel:  var(--ink-black);
+
+  /* Text */
+  --ink:      var(--ink-black);
+  --ink-soft: #57514a;
+  --heading:  var(--ink-black);
+  --link:     var(--signal-deep);
+
+  /* Akzent */
+  --accent:       var(--signal);
+  --accent-hover: var(--signal-deep);
+  --accent-ink:   var(--signal-deep);
+  --accent-tint:  rgb(255 86 48 / 0.11);
+  --accent-line:  rgb(255 86 48 / 0.4);
+  --on-accent:    #ffffff;
+  --focus:        var(--signal);
+
+  /* Auf Bild / dunklem Grund */
+  --on-dark:       #ffffff;
+  --on-dark-soft:  rgb(255 255 255 / 0.92);
+  --on-dark-muted: rgb(255 255 255 / 0.7);
+  --on-dark-line:  rgb(255 255 255 / 0.5);
+  --on-dark-wash:  rgb(255 255 255 / 0.12);
+  --on-image-shadow:    0 1px 12px rgb(24 22 19 / 0.5);
+  --on-image-shadow-lg: 0 2px 24px rgb(24 22 19 / 0.5);
+  --hero-scrim: linear-gradient(180deg,
+                  rgb(24 22 19 / 0.58) 0%,
+                  rgb(24 22 19 / 0.22) 38%,
+                  rgb(24 22 19 / 0.62) 72%,
+                  rgb(24 22 19 / 0.95) 100%);
+
+  /* Linien */
+  --line:        rgb(24 22 19 / 0.14);
+  --line-strong: rgb(24 22 19 / 0.34);
+
+  /* Statusfarben */
+  --green: #1f6b3f;  --green-bg: rgb(31 107 63 / 0.12);
+  --amber: #8f5a0d;  --amber-bg: rgb(143 90 13 / 0.14);
+  --rust:  #c0341a;  --rust-bg:  rgb(192 52 26 / 0.11);
+
+  /* Typografie
+     Die Logo-Vorlage nutzt eine schwere Grotesk in Versalien. Auf
+     Systemschriften kommt Helvetica/Arial in 800–900 dem am nächsten. */
+  --font-display: "Helvetica Neue", Helvetica, "Arial Black", Arial,
+                  system-ui, -apple-system, sans-serif;
+  --font-body:    "Helvetica Neue", Helvetica, Arial, system-ui,
+                  -apple-system, sans-serif;
+  --font-ui:      var(--font-body);
+  --font-mono:    ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono",
+                  "Roboto Mono", Menlo, Consolas, monospace;
+
+  --h-leading:   0.96;
+  --h-weight:    900;
+  --h-tracking:  -0.035em;
+  --h-transform: uppercase;
+  --h1-size: clamp(2.6rem, 7.6vw, 5.1rem);
+  --h2-size: clamp(1.9rem, 5vw, 3.1rem);
+
+  /* Formen — Tempo ist kantig */
+  --radius:        2px;
+  --radius-sm:     2px;
+  --badge-radius:  2px;
+  --icon-radius:   2px;
+  --step-radius:   2px;
+  --photo-radius:  2px;
+  --btn-radius:    2px;
+
+  /* Buttons */
+  --btn-weight:    800;
+  --btn-size:      0.82rem;
+  --btn-tracking:  0.1em;
+  --btn-transform: uppercase;
+  --btn-pad:       0.95rem 1.8rem;
+  --btn-border:    2px;
+
+  /* Navigation */
+  --nav-h:          66px;
+  --logo-h:         30px;
+  --nav-size:       0.78rem;
+  --nav-tracking:   0.12em;
+  --nav-transform:  uppercase;
+  --nav-bg-scrolled: #ffffff;
+  --nav-shadow:     0 2px 0 var(--ink-black);
+
+  /* Bänder */
+  --stats-bg:  var(--ink-black);
+  --stats-ink: #ffffff;
+  --stats-num: #ffffff;
+  --step-bg:  var(--ink-black);
+  --step-ink: #ffffff;
+  --index-bg:  var(--signal);
+  --index-ink: #ffffff;
+
+  /* Footer */
+  --footer-bg:    var(--ink-black);
+  --footer-ink:   rgb(255 255 255 / 0.68);
+  --footer-head:  #ffffff;
+  --footer-link:  rgb(255 255 255 / 0.78);
+  --footer-line:  rgb(255 255 255 / 0.18);
+  --footer-muted: rgb(255 255 255 / 0.45);
+
+  /* Raster */
+  --wrap: 1220px;
+  --section-pad: clamp(3.5rem, 8vw, 6rem);
+  --rule-w: 0; --rule-h: 0;
+
+  --shadow-sm: none;
+  --shadow-md: 6px 6px 0 var(--ink-black);
+  --shadow-btn: none;
+}
+
+/* ── Speed-Linien statt Strich als Sektionsmarke ──────────────────────── */
+.rule {
+  width: 62px; height: 20px; background: none; position: relative; margin-bottom: 1.4rem;
+}
+.rule::before, .rule::after {
+  content: ""; position: absolute; left: 0; height: 4px; background: var(--signal);
+}
+.rule::before { top: 0;  width: 62px; }
+.rule::after  { top: 8px; width: 38px; }
+
+/* ── Alles kantig, harte Kontraste ────────────────────────────────────── */
+.tour-card { border: var(--card-border); }
+.tour-card:hover { box-shadow: var(--shadow-md); transform: translate(-3px, -3px); }
+.tour-media { border-bottom: 1.5px solid var(--ink-black); }
+
+.form-card { border: 2px solid var(--ink-black); box-shadow: 6px 6px 0 var(--signal); }
+.run-item { border: 1.5px solid var(--ink-black); border-left: 6px solid var(--signal); }
+.run-empty { border: 2px dashed var(--ink-black); }
+.map-shell { border: 2px solid var(--ink-black); }
+.about-photo { border: 2px solid var(--ink-black); box-shadow: 8px 8px 0 var(--signal); }
+.countdown { border: 2px solid var(--ink-black); }
+.value-icon { border: 1.5px solid var(--ink-black); background: transparent; color: var(--ink-black); }
+.value-item:hover .value-icon { background: var(--signal); border-color: var(--signal); color: #fff; }
+
+/* ── Navigation: harte Unterkante wenn gescrollt ──────────────────────── */
+#navbar.scrolled { backdrop-filter: none; }
+
+/* ── Hero: Zeilen fahren von unten ein, Signal-Kante links ────────────── */
+#hero h1 .line > span {
+  transform: translateY(105%);
+  animation: tempo-rise 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+#hero h1 .line:nth-child(2) > span { animation-delay: 0.1s; }
+#hero h1 .line:nth-child(3) > span { animation-delay: 0.2s; }
+@keyframes tempo-rise { to { transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  #hero h1 .line > span { transform: none; animation: none; }
+}
+
+.hero-inner::before {
+  content: ""; position: absolute; left: 0; top: clamp(6rem, 14vw, 8rem); bottom: 30%;
+  width: 5px; background: var(--signal);
+  display: none;
+}
+@media (min-width: 700px) {
+  .hero-inner { padding-left: 2rem; }
+  .hero-inner::before { display: block; }
+}
+
+.hero-badge {
+  border-radius: 0; background: var(--signal); border-color: var(--signal);
+  backdrop-filter: none; letter-spacing: 0.16em;
+}
+
+/* ── Kennzahlen auf Tinte ─────────────────────────────────────────────── */
+.stat b .unit { color: var(--signal); }
+
+/* ── Schrittnummern gross und kantig ──────────────────────────────────── */
+.step::before { font-size: 0.75rem; letter-spacing: 0.06em; }
+
+/* ── Überschriften: Speed-Linien wachsen beim Einblenden ──────────────── */
+.section-head .rule::before,
+.section-head .rule::after {
+  transform-origin: left; transform: scaleX(0);
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.section-head.in .rule::before { transform: scaleX(1); }
+.section-head.in .rule::after  { transform: scaleX(1); transition-delay: 0.1s; }
+
+/* ── FAQ: kantige Trennlinien, dicker ─────────────────────────────────── */
+.faq-list { border-top: 2px solid var(--ink-black); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item:last-child { border-bottom: 2px solid var(--ink-black); }
+
+/* ── Karussell-Pfeile kantig ──────────────────────────────────────────── */
+.carousel-arrows button { border: 2px solid var(--ink-black); border-radius: 0; }
+.carousel-dots button { border-radius: 0; height: 5px; }

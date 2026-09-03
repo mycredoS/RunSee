@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.runandsee.ch/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.runandsee.ch/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.runandsee.ch/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.runandsee.ch/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.runandsee.ch/" />
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/hero/luzern-kapellbruecke.jpg</image:loc>
+      <image:title>The Chapel Bridge and Water Tower over the river Reuss in Lucerne, with the Alps behind</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-morning-run.jpg</image:loc>
+      <image:title>Good Morning Scenic Run — View across Lake Lucerne to Mount Pilatus from the slope above the city</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-heritage.jpg</image:loc>
+      <image:title>Classic Heritage Run — the Lion Monument carved into the rock face — landmark on the guided heritage run in Lucerne</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-hidden-gems.jpg</image:loc>
+      <image:title>Hidden Gems Run — shaded tree-lined avenue at the old Propsteimatte cemetery in Lucerne</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-top-views.jpg</image:loc>
+      <image:title>Top Views Challenge — View from the Gütsch across the old town, the river Reuss and Lake Lucerne</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.runandsee.ch/de/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.runandsee.ch/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.runandsee.ch/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.runandsee.ch/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.runandsee.ch/" />
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/hero/luzern-kapellbruecke.jpg</image:loc>
+      <image:title>Kapellbrücke und Wasserturm über der Reuss in Luzern, dahinter die Alpen</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-morning-run.jpg</image:loc>
+      <image:title>Good Morning Scenic Run — Blick über den Vierwaldstättersee auf den Pilatus, vom Hang oberhalb der Stadt</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-heritage.jpg</image:loc>
+      <image:title>Classic Heritage Run — das Löwendenkmal im Felsen — Wahrzeichen auf der geführten Heritage-Runde in Luzern</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-hidden-gems.jpg</image:loc>
+      <image:title>Hidden Gems Run — schattige Baumallee auf dem Alten Friedhof Propsteimatte in Luzern</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-top-views.jpg</image:loc>
+      <image:title>Top Views Challenge — Blick vom Gütsch über die Altstadt, die Reuss und den Vierwaldstättersee</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.runandsee.ch/fr/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.runandsee.ch/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.runandsee.ch/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.runandsee.ch/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.runandsee.ch/" />
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/hero/luzern-kapellbruecke.jpg</image:loc>
+      <image:title>Le Pont de la Chapelle et la Tour d&#x27;eau sur la Reuss à Lucerne, les Alpes en arrière-plan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-morning-run.jpg</image:loc>
+      <image:title>Good Morning Scenic Run — Vue sur le lac des Quatre-Cantons et le Pilate depuis la colline au-dessus de la ville</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-heritage.jpg</image:loc>
+      <image:title>Classic Heritage Run — le Lion de Lucerne sculpté dans la roche — monument sur le parcours Heritage guidé</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-hidden-gems.jpg</image:loc>
+      <image:title>Hidden Gems Run — allée bordée d&#x27;arbres à l&#x27;ancien cimetière de Propsteimatte à Lucerne</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.runandsee.ch/assets/images/tours/tour-top-views.jpg</image:loc>
+      <image:title>Top Views Challenge — Vue depuis le Gütsch sur la vieille ville, la Reuss et le lac des Quatre-Cantons</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.runandsee.ch/legal.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.runandsee.ch/legal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.runandsee.ch/de/legal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.runandsee.ch/fr/legal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.runandsee.ch/legal.html" />
+  </url>
+  <url>
+    <loc>https://www.runandsee.ch/de/legal.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.runandsee.ch/legal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.runandsee.ch/de/legal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.runandsee.ch/fr/legal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.runandsee.ch/legal.html" />
+  </url>
+  <url>
+    <loc>https://www.runandsee.ch/fr/legal.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.runandsee.ch/legal.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.runandsee.ch/de/legal.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.runandsee.ch/fr/legal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.runandsee.ch/legal.html" />
+  </url>
+</urlset>

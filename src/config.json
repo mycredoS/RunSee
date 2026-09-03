@@ -1,0 +1,123 @@
+{
+  "_README": "Zentrale Einstellungen. Alles mit TODO_ muss von Philippe ersetzt werden, bevor die Seite live geht.",
+  "site": {
+    "domain": "https://www.runandsee.ch",
+    "brand": "Run & See Lucerne",
+    "established": 2026,
+    "instagram_handle": "runandsee_lucerne",
+    "instagram_url": "https://www.instagram.com/runandsee_lucerne",
+    "strava_club_url": "",
+    "whatsapp_url": "",
+    "contact_email": "philippe@runandsee.ch",
+    "theme": "horizont",
+    "_theme_hinweis": "horizont (produktiv) | tempo (Alternativentwurf). Vergleich bauen: python3 build.py --previews"
+  },
+  "form": {
+    "_README": "provider: 'formspree' | 'netlify' | 'mailto'. Bei formspree die Endpoint-URL eintragen (https://formspree.io/f/xxxxxxx).",
+    "provider": "mailto",
+    "formspree_endpoint": "TODO_https://formspree.io/f/xxxxxxx"
+  },
+  "meeting_point": {
+    "name": "Kapellbrücke / Chapel Bridge",
+    "detail_en": "South end of the Chapel Bridge, next to the Water Tower.",
+    "detail_de": "Am südlichen Ende der Kapellbrücke, direkt beim Wasserturm.",
+    "detail_fr": "À l'extrémité sud du Pont de la Chapelle, près de la Tour d'eau.",
+    "_TODO": "Koordinaten bitte prüfen. Die Werte stammen aus der alten Version und weichen um ca. 200 m von der Kapellbrücke ab.",
+    "lat": 47.05174,
+    "lon": 8.30772,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Kapellbr%C3%BCcke%2C%206002%20Luzern"
+  },
+  "schedule": {
+    "_README": "Kommende Termine. LEER = die Seite zeigt automatisch 'Termine folgen' und sammelt stattdessen E-Mail-Adressen. Termine in der Vergangenheit werden im Browser automatisch ausgeblendet. Format: date = YYYY-MM-DD, time = HH:MM, tours = IDs aus content.json (morning | heritage | hidden | views).",
+    "_example": [
+      {
+        "date": "2026-08-06",
+        "time": "07:45",
+        "tours": [
+          "morning"
+        ]
+      },
+      {
+        "date": "2026-08-06",
+        "time": "17:30",
+        "tours": [
+          "heritage",
+          "hidden",
+          "views"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "date": "2026-09-16",
+        "time": "07:15",
+        "tours": [
+          "morning"
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "time": "11:30",
+        "tours": []
+      },
+      {
+        "date": "2026-09-17",
+        "time": "17:30",
+        "tours": []
+      }
+    ]
+  },
+  "legal": {
+    "_README": "Pflichtangaben für Impressum (Schweiz). Ohne diese Angaben sollte die Seite nicht live gehen.",
+    "operator_name": "TODO_Vorname Nachname",
+    "address_line": "TODO_Strasse Nr.",
+    "postal_code": "TODO_6000",
+    "city": "Luzern",
+    "country": "Schweiz",
+    "email": "philippe@runandsee.ch",
+    "phone": "",
+    "last_updated": "2026-08-01"
+  },
+  "images": {
+    "_README": "Bildnachweis. Fuer JEDES Foto muss geklaert sein, woher es stammt und ob es verwendet werden darf. 'source' = eigenes Foto | Name der Plattform | Person. 'author' = Urheber, 'licence' = z.B. 'eigenes Werk', 'Unsplash Licence', 'CC BY 4.0', 'schriftliche Erlaubnis vom TT.MM.JJJJ'. Steht 'show_in_imprint' auf true, erscheint der Nachweis im Impressum.",
+    "show_in_imprint": true,
+    "credits": {
+      "luzern-kapellbruecke": {
+        "file": "assets/images/hero/luzern-kapellbruecke.jpg",
+        "source": "Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Luzern_Kapellbruecke.jpg",
+        "author": "Ikiwaner",
+        "licence": "CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/ — zugeschnitten und skaliert"
+      },
+      "tour-morning-run": {
+        "file": "assets/images/tours/tour-morning-run.jpg",
+        "source": "Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Luzern_Pilatus_and_Lake_1170975.jpg",
+        "author": "Ermell (Reinhold Möller)",
+        "licence": "CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/ — zugeschnitten und skaliert"
+      },
+      "tour-heritage": {
+        "file": "assets/images/tours/tour-heritage.jpg",
+        "source": "Wikimedia Commons, https://commons.wikimedia.org/wiki/File:L%C3%B6wendenkmal_-_The_Lion_Monument_(Lucerne)_02.jpg",
+        "author": "Andrew Shiva",
+        "licence": "CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/ — zugeschnitten und skaliert"
+      },
+      "tour-hidden-gems": {
+        "file": "assets/images/tours/tour-hidden-gems.jpg",
+        "source": "Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Alter_Friedhof_Propsteimatte.jpg",
+        "author": "Paebi",
+        "licence": "CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/ — zugeschnitten und skaliert"
+      },
+      "tour-top-views": {
+        "file": "assets/images/tours/tour-top-views.jpg",
+        "source": "Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Luzern_asv2022-10_Blick_vom_G%C3%BCtsch_img1.jpg",
+        "author": "A.Savin, Wikipedia",
+        "licence": "Free Art License 1.3, https://artlibre.org/licence/lal/en/ — zugeschnitten und skaliert"
+      },
+      "philippe": {
+        "file": "assets/images/team/philippe.png",
+        "source": "eigenes Foto",
+        "author": "Philippe Kaufmann",
+        "licence": "eigenes Werk"
+      }
+    }
+  }
+}

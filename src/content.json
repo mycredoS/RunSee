@@ -1,0 +1,977 @@
+{
+  "_README": "Alle Texte der Website. Sprachneutrale Fakten (Distanzen, Zeiten, Bilder) stehen unter 'tours'. Übersetzungen unter 'languages'. Nach jeder Änderung: python3 build.py",
+  "tours": [
+    {
+      "id": "morning",
+      "image": "tour-morning-run",
+      "level": "green",
+      "km": "5–6 km",
+      "mi": "3.1–3.7 mi",
+      "pace": "6:00–6:30 min/km",
+      "pace_mi": "9:40–10:30 min/mi",
+      "elevation": "",
+      "times": [
+        "07:15"
+      ]
+    },
+    {
+      "id": "heritage",
+      "image": "tour-heritage",
+      "level": "orange",
+      "km": "7–8 km",
+      "mi": "4.3–5.0 mi",
+      "pace": "6:00–6:30 min/km",
+      "pace_mi": "9:40–10:30 min/mi",
+      "elevation": "",
+      "times": [
+        "11:30",
+        "17:30"
+      ],
+      "_TODO": "Startzeiten 11:30/17:30 aus dem Input-Dokument. Die alte Website nannte 11:45. Bitte final festlegen."
+    },
+    {
+      "id": "hidden",
+      "image": "tour-hidden-gems",
+      "level": "orange",
+      "km": "7–8 km",
+      "mi": "4.3–5.0 mi",
+      "pace": "6:00–6:30 min/km",
+      "pace_mi": "9:40–10:30 min/mi",
+      "elevation": "",
+      "times": [
+        "11:30",
+        "17:30"
+      ]
+    },
+    {
+      "id": "views",
+      "image": "tour-top-views",
+      "level": "red",
+      "km": "9–10 km",
+      "mi": "5.6–6.2 mi",
+      "pace": "",
+      "pace_mi": "",
+      "elevation": "250–300 m (820–985 ft)",
+      "times": [
+        "17:30"
+      ]
+    }
+  ],
+  "languages": {
+    "en": {
+      "locale": "en_CH",
+      "lang_name": "English",
+      "meta_title": "Free Running Tours in Lucerne | Run & See",
+      "meta_description": "Join a free guided running tour in Lucerne, Switzerland. Small groups, four routes, a local guide, no fee. Guided in English, German, Swiss German and French. All levels welcome.",
+      "og_image_alt": "The Chapel Bridge and Water Tower over the river Reuss in Lucerne, with the Alps behind",
+      "nav": {
+        "tours": "Tours",
+        "how": "How it works",
+        "join": "Next runs",
+        "about": "Your guide",
+        "faq": "FAQ",
+        "cta": "Join a run",
+        "aria_main": "Main navigation",
+        "aria_menu": "Open menu",
+        "aria_lang": "Choose language"
+      },
+      "skip_link": "Skip to main content",
+      "hero": {
+        "badge": "Always free · Small groups",
+        "h1": "See Lucerne at running pace",
+        "lead": "A free guided run through Lucerne with someone who actually lives here. Stay in training, see the city from angles the tour buses miss, and meet people worth running with.",
+        "cta_primary": "Find your next run",
+        "cta_secondary": "See the four routes",
+        "h1_lines": [
+          "See Lucerne",
+          "at running pace"
+        ]
+      },
+      "value": {
+        "heading": "Why run instead of walk",
+        "items": [
+          {
+            "icon": "map",
+            "title": "More city, less time",
+            "text": "An hour on foot gets you a few streets. Running gets you the old town, the lake and a viewpoint — and back before your first meeting."
+          },
+          {
+            "icon": "user",
+            "title": "A local, not a script",
+            "text": "Born and based in Lucerne. You get the stories, the shortcuts, and an honest answer when you ask where people who live here actually eat."
+          },
+          {
+            "icon": "users",
+            "title": "People worth meeting",
+            "text": "Small groups only. Runners from everywhere, travelling for work or for pleasure, who would all rather be moving than queueing."
+          },
+          {
+            "icon": "gift",
+            "title": "Free, genuinely",
+            "text": "No ticket, no booking fee, no sales pitch at the end. A tip is welcome if you enjoyed it, and never expected."
+          }
+        ]
+      },
+      "tours_section": {
+        "heading": "Choose your run",
+        "intro": "Four routes, four moods. Pick by distance and by what you want to see.",
+        "level_green": "All levels",
+        "level_orange": "Some experience",
+        "level_red": "Experienced runners",
+        "label_distance": "Distance",
+        "label_pace": "Pace",
+        "label_elevation": "Elevation",
+        "label_start": "Start",
+        "items": {
+          "morning": {
+            "name": "Good Morning Scenic Run",
+            "tagline": "Start the day ahead of the crowds",
+            "text": "A relaxed early run along the lake and through the old town while Lucerne is still waking up. The iconic sights, empty of people, in the best light of the day. Back around 08:00 — in time for breakfast or your first meeting.",
+            "image_alt": "View across Lake Lucerne to Mount Pilatus from the slope above the city"
+          },
+          "heritage": {
+            "name": "Classic Heritage Run",
+            "tagline": "The landmarks, with the stories attached",
+            "text": "A scenic loop connecting the Chapel Bridge, the Musegg Wall, the Lion Monument and the lakefront. You get the postcard shots, plus the parts of the story the postcards leave out. Flat throughout.",
+            "image_alt": "the Lion Monument carved into the rock face — landmark on the guided heritage run in Lucerne"
+          },
+          "hidden": {
+            "name": "Hidden Gems Run",
+            "tagline": "The Lucerne locals keep to themselves",
+            "text": "Courtyards, riverside paths, quiet neighbourhoods and a few corners most visitors never find. A different city entirely from the one on the souvenir shelf.",
+            "image_alt": "shaded tree-lined avenue at the old Propsteimatte cemetery in Lucerne"
+          },
+          "views": {
+            "name": "Top Views Challenge",
+            "tagline": "Less talk, more elevation",
+            "text": "Three climbs, three panoramas: the Musegg Wall, the Gütsch and the Konsi viewpoint, with the lake and the Alps laid out below. Demanding, and worth every metre. Bring legs that have done hills before.",
+            "image_alt": "View from the Gütsch across the old town, the river Reuss and Lake Lucerne"
+          }
+        }
+      },
+      "how": {
+        "heading": "Before you run",
+        "steps": [
+          {
+            "title": "Pick a date and a route",
+            "text": "Choose from the runs below. Nothing fits your schedule? Say so in the message field."
+          },
+          {
+            "title": "Get a confirmation",
+            "text": "I reply personally, usually within a day, with the exact meeting spot."
+          },
+          {
+            "title": "Show up and run",
+            "text": "We start on time, run together, stop where it's worth stopping, and finish where we started."
+          },
+          {
+            "title": "Coffee, optional",
+            "text": "Most groups end up at a café, or in the lake in summer. Nobody has to stay — most people do."
+          }
+        ],
+        "know_heading": "Good to know",
+        "meet_heading": "Where we meet"
+      },
+      "join": {
+        "heading": "Next runs",
+        "intro": "Groups are deliberately small, so book early.",
+        "empty_title": "The next dates are being finalised",
+        "empty_text": "Leave your email below and I'll let you know the moment they're open. No newsletter, no spam — just the dates.",
+        "form_heading": "Reserve your spot",
+        "form": {
+          "name": "Your name",
+          "name_ph": "Jane Smith",
+          "email": "Email",
+          "email_ph": "jane@example.com",
+          "date": "Preferred date",
+          "date_flexible": "I'm flexible / notify me about new dates",
+          "tour": "Route",
+          "tour_any": "No preference — surprise me",
+          "people": "Number of runners",
+          "language": "Preferred language on the run",
+          "message": "Anything I should know?",
+          "message_ph": "First time in Lucerne? Injury to work around? No running shoes with you? Tell me here.",
+          "giveaway": "Pick your finisher treat",
+          "giveaway_options": [
+            "Swiss chocolate",
+            "Local energy bar",
+            "Mini carabiner"
+          ],
+          "consent": "I agree that my details may be used to organise this run. See the",
+          "consent_link": "privacy notice",
+          "submit": "Send request",
+          "sending": "Sending…",
+          "success": "Thanks — your request is on its way. I'll come back to you personally within a day.",
+          "error": "Something went wrong. Please email me directly at",
+          "required_note": "Fields marked * are required."
+        },
+        "run_open": "Route open",
+        "run_open_note": "When a date shows no route, the first booking decides — first come, first served. I add the route here as soon as it is settled."
+      },
+      "good_to_know": {
+        "items": [
+          {
+            "title": "We run at the slowest pace",
+            "text": "The group adapts to whoever is slowest, always. Nobody gets dropped, and nobody has to apologise for their pace."
+          },
+          {
+            "title": "What to bring",
+            "text": "Running shoes and clothing for the weather. There's water along the route. Travelling without running shoes? Mention it when you sign up."
+          }
+        ]
+      },
+      "meeting": {
+        "heading": "Where we meet",
+        "map_consent_title": "Map loaded from Google",
+        "map_consent_text": "Loading the map sends your IP address and browser data to Google. Nothing is loaded until you click.",
+        "map_consent_button": "Load map",
+        "open_in_maps": "Open in Google Maps"
+      },
+      "about": {
+        "heading": "Your guide",
+        "name": "Hi, I'm Philippe",
+        "text": "I'm a runner from Lucerne — trails, city loops, and a weakness for hills that look worse than they are. Off the road you'll find me playing padel or on a mountain bike. Born and based here, I know the streets, the climbs, and the corners that never make it onto a map.",
+        "text_2": "My idea is simple: give runners of every level, age and background a free, genuinely enjoyable way to see this city together. No tour-guide voice, no flag in the air. Just a run with someone who knows the place.",
+        "languages_label": "Runs are guided in",
+        "languages_value": "English, German, Swiss German and French",
+        "instagram_label": "Follow the runs on Instagram"
+      },
+      "faq": {
+        "heading": "Questions runners ask",
+        "items": [
+          {
+            "q": "Is it really free?",
+            "a": "Yes. No fee, no deposit, no ticket. Run & See started as a way to share the city, not as a business. If you enjoyed the run, a tip at the end is welcome — but it's entirely your call, and nobody is treated differently for not tipping."
+          },
+          {
+            "q": "How fit do I need to be?",
+            "a": "For the Good Morning Scenic Run, being comfortable over 5–6 km at a pace where you can still talk is enough. Heritage and Hidden Gems suit runners who train regularly. The Top Views Challenge climbs 250–300 m and is for experienced runners only. Whichever you pick, the group runs at the pace of the slowest person."
+          },
+          {
+            "q": "What language do you run in?",
+            "a": "English, German, Swiss German or French — whichever suits the group. Mixed groups usually end up in English. Tell me your preference when you sign up."
+          },
+          {
+            "q": "How big are the groups?",
+            "a": "Small on purpose — usually a handful of runners. It keeps the group together at traffic lights and makes conversation possible. It's also why booking early matters."
+          },
+          {
+            "q": "I'm travelling without running shoes. Can I still join?",
+            "a": "Possibly. Mention it in the message field when you sign up and I'll see what I can organise in common sizes. No promises, but it's worth asking."
+          },
+          {
+            "q": "What happens if it rains?",
+            "a": "We run. Lucerne is beautiful in the rain and the routes stay open. Runs are only called off in genuinely unsafe conditions — thunderstorms, ice — and you'll hear from me by email if that happens."
+          },
+          {
+            "q": "Do you stop for photos?",
+            "a": "Yes. Every route has planned stops at the best viewpoints, and pausing for a photo is never a problem. This is a run through a city, not a time trial."
+          },
+          {
+            "q": "Can we run at a different time or on a different route?",
+            "a": "Often, yes. Use the message field to tell me what you have in mind. Early mornings, lunch breaks and evenings all work; groups arriving together can usually get a dedicated slot."
+          },
+          {
+            "q": "Where exactly do we meet?",
+            "a": "At the Chapel Bridge in the centre of Lucerne, at the southern end next to the Water Tower — ten minutes on foot from the main station. You'll get the exact spot and a map link with your confirmation."
+          },
+          {
+            "q": "Is there somewhere to leave my bag?",
+            "a": "Not at the meeting point. Come with as little as you can, or use the lockers at Lucerne main station on your way."
+          }
+        ]
+      },
+      "footer": {
+        "tagline": "Free guided running tours in Lucerne, Switzerland.",
+        "nav_heading": "Pages",
+        "legal_heading": "Legal",
+        "imprint": "Imprint",
+        "privacy": "Privacy",
+        "established": "Established",
+        "language_heading": "Language"
+      },
+      "legal_page": {
+        "title": "Imprint & Privacy",
+        "meta_description": "Imprint and privacy notice for Run & See Lucerne.",
+        "back": "Back to the site",
+        "imprint_heading": "Imprint",
+        "imprint_responsible": "Responsible for this website",
+        "contact": "Contact",
+        "disclaimer_heading": "Disclaimer",
+        "disclaimer_text": "Participation in a Run & See run is voluntary and at your own risk. Run & See is not a commercial tour operator and holds no accident or liability insurance for participants. Please make sure you are healthy enough to run and that you have your own accident insurance — in Switzerland this is normally covered through your health or employer insurance. Content on this site is provided in good faith; no liability is accepted for its accuracy or for the content of external websites linked from here.",
+        "privacy_heading": "Privacy notice",
+        "privacy_intro": "This site is deliberately minimal. It sets no tracking cookies and runs no analytics.",
+        "privacy_sections": [
+          {
+            "h": "What is collected",
+            "p": "Only what you type into the sign-up form: your name, email address, chosen date and route, preferred language, and anything you write in the message field. Nothing else is collected."
+          },
+          {
+            "h": "Why",
+            "p": "Solely to organise the run you signed up for, and to contact you about it. Your data is never sold, rented or passed to third parties for advertising."
+          },
+          {
+            "h": "How long it is kept",
+            "p": "Until the run has taken place, plus a short period afterwards. If you asked to be notified about future dates, your email is kept until you ask to be removed."
+          },
+          {
+            "h": "Server logs",
+            "p": "The hosting provider records standard access logs (IP address, time, page requested) for security and troubleshooting. These are kept for a limited period and are not linked to form submissions."
+          },
+          {
+            "h": "Fonts and map",
+            "p": "Web fonts are served from this site's own server, so no data goes to a font provider. The Google Maps embed on the meeting-point section loads only after you explicitly click to load it; until then no data is sent to Google."
+          },
+          {
+            "h": "Your rights",
+            "p": "You can ask at any time what data is held about you, have it corrected, or have it deleted. A short email is enough."
+          }
+        ],
+        "privacy_contact": "For any privacy question, write to",
+        "credits_heading": "Image credits",
+        "credits_intro": "All photographs on this site are used with permission. Source and licence per image:",
+        "fonts_heading": "Typefaces",
+        "fonts_text": "Body text is set in the fonts already installed on your own device; none are loaded from a third party. The wordmark in the logo was drawn from Carlito by Łukasz Dziedzic, licensed under the SIL Open Font License 1.1."
+      },
+      "cookie_note": "This site uses no tracking cookies and no analytics.",
+      "stats_labels": [
+        "Routes to choose from",
+        "What it costs you",
+        "Languages on the run",
+        "Max. elevation gain"
+      ],
+      "sticky": {
+        "text": "Free · Small groups",
+        "button": "Join a run"
+      },
+      "carousel": {
+        "label": "Tours",
+        "prev": "Previous tour",
+        "next": "Next tour",
+        "goto": "Go to tour"
+      },
+      "notfound": {
+        "title": "Page not found",
+        "text": "This page does not exist — or it moved. The runs are still on, though.",
+        "cta": "Back to the start",
+        "alt": "Other languages"
+      }
+    },
+    "de": {
+      "locale": "de_CH",
+      "lang_name": "Deutsch",
+      "meta_title": "Gratis Lauftouren in Luzern | Run & See",
+      "meta_description": "Geführte Lauftour durch Luzern – kostenlos, in kleinen Gruppen, mit einem einheimischen Guide. Vier Routen, vier Sprachen, alle Levels willkommen.",
+      "og_image_alt": "Kapellbrücke und Wasserturm über der Reuss in Luzern, dahinter die Alpen",
+      "nav": {
+        "tours": "Touren",
+        "how": "Ablauf",
+        "join": "Nächste Runs",
+        "about": "Dein Guide",
+        "faq": "FAQ",
+        "cta": "Mitlaufen",
+        "aria_main": "Hauptnavigation",
+        "aria_menu": "Menü öffnen",
+        "aria_lang": "Sprache wählen"
+      },
+      "skip_link": "Zum Inhalt springen",
+      "hero": {
+        "badge": "Immer kostenlos · Kleine Gruppen",
+        "h1": "Luzern im Laufschritt entdecken",
+        "lead": "Eine geführte Laufrunde durch Luzern – gratis, mit jemandem, der wirklich hier lebt. Bleib im Training, sieh die Stadt von Seiten, die kein Reisebus je zu sehen bekommt, und triff Leute, mit denen sich das Laufen lohnt.",
+        "cta_primary": "Nächsten Run finden",
+        "cta_secondary": "Die vier Routen ansehen",
+        "h1_lines": [
+          "Luzern",
+          "im Laufschritt"
+        ]
+      },
+      "value": {
+        "heading": "Warum laufen statt spazieren",
+        "items": [
+          {
+            "icon": "map",
+            "title": "Mehr Stadt in weniger Zeit",
+            "text": "Zu Fuss schaffst du in einer Stunde ein paar Gassen. Laufend schaffst du Altstadt, See und einen Aussichtspunkt – und bist vor dem ersten Termin zurück."
+          },
+          {
+            "icon": "user",
+            "title": "Ein Einheimischer, kein Reiseführertext",
+            "text": "In Luzern geboren, in Luzern zuhause. Du bekommst die Geschichten, die Abkürzungen und eine ehrliche Antwort auf die Frage, wo die Leute essen, die hier wohnen."
+          },
+          {
+            "icon": "users",
+            "title": "Leute, die man kennenlernen will",
+            "text": "Bewusst kleine Gruppen. Läuferinnen und Läufer aus aller Welt, geschäftlich oder privat unterwegs – und alle lieber in Bewegung als in der Warteschlange."
+          },
+          {
+            "icon": "gift",
+            "title": "Gratis, und zwar wirklich",
+            "text": "Kein Ticket, keine Buchungsgebühr, kein Verkaufsgespräch am Schluss. Ein Trinkgeld ist willkommen, wenn es dir gefallen hat – erwartet wird es nie."
+          }
+        ]
+      },
+      "tours_section": {
+        "heading": "Wähle deinen Run",
+        "intro": "Vier Routen, vier Stimmungen. Wähle nach Distanz und danach, was du sehen willst.",
+        "level_green": "Alle Levels",
+        "level_orange": "Etwas Erfahrung",
+        "level_red": "Erfahrene Läufer",
+        "label_distance": "Distanz",
+        "label_pace": "Tempo",
+        "label_elevation": "Höhenmeter",
+        "label_start": "Start",
+        "items": {
+          "morning": {
+            "name": "Good Morning Scenic Run",
+            "tagline": "Los, bevor die Stadt wach ist",
+            "text": "Eine entspannte Frührunde dem See entlang und durch die Altstadt, während Luzern noch aufwacht. Die bekanntesten Ecken menschenleer, im besten Licht des Tages. Zurück gegen 08:00 – rechtzeitig zum Frühstück oder zum ersten Termin.",
+            "image_alt": "Blick über den Vierwaldstättersee auf den Pilatus, vom Hang oberhalb der Stadt"
+          },
+          "heritage": {
+            "name": "Classic Heritage Run",
+            "tagline": "Die Wahrzeichen, samt Geschichten",
+            "text": "Eine Runde, die Kapellbrücke, Museggmauer, Löwendenkmal und Seeufer verbindet. Du bekommst die Postkartenmotive – und die Teile der Geschichte, welche die Postkarte weglässt. Durchgehend flach.",
+            "image_alt": "das Löwendenkmal im Felsen — Wahrzeichen auf der geführten Heritage-Runde in Luzern"
+          },
+          "hidden": {
+            "name": "Hidden Gems Run",
+            "tagline": "Das Luzern der Luzerner",
+            "text": "Innenhöfe, Uferwege, ruhige Quartiere und ein paar Ecken, die kaum ein Gast je findet. Eine ganz andere Stadt als die im Souvenirregal.",
+            "image_alt": "schattige Baumallee auf dem Alten Friedhof Propsteimatte in Luzern"
+          },
+          "views": {
+            "name": "Top Views Challenge",
+            "tagline": "Weniger reden, mehr Höhenmeter",
+            "text": "Drei Anstiege, drei Panoramen: Museggmauer, Gütsch und Aussichtspunkt Konsi – mit See und Alpen zu Füssen. Fordernd, und jeden Meter wert. Bring Beine mit, die schon Hügel gesehen haben.",
+            "image_alt": "Blick vom Gütsch über die Altstadt, die Reuss und den Vierwaldstättersee"
+          }
+        }
+      },
+      "how": {
+        "heading": "Bevor es losgeht",
+        "steps": [
+          {
+            "title": "Datum und Route wählen",
+            "text": "Wähle aus den Runs unten. Passt nichts in deinen Kalender? Schreib es ins Nachrichtenfeld."
+          },
+          {
+            "title": "Bestätigung erhalten",
+            "text": "Ich antworte persönlich, meist innert eines Tages, mit dem genauen Treffpunkt."
+          },
+          {
+            "title": "Auftauchen und loslaufen",
+            "text": "Wir starten pünktlich, laufen zusammen, halten dort, wo es sich lohnt, und kommen dort an, wo wir gestartet sind."
+          },
+          {
+            "title": "Kaffee, freiwillig",
+            "text": "Die meisten Gruppen landen danach in einem Café oder im Sommer im See. Niemand muss bleiben – die meisten bleiben trotzdem."
+          }
+        ],
+        "know_heading": "Gut zu wissen",
+        "meet_heading": "Wo wir uns treffen"
+      },
+      "join": {
+        "heading": "Nächste Runs",
+        "intro": "Die Gruppen sind bewusst klein, melde dich also früh.",
+        "empty_title": "Die nächsten Termine sind in Arbeit",
+        "empty_text": "Hinterlass unten deine E-Mail-Adresse, dann melde ich mich, sobald sie offen sind. Kein Newsletter, kein Spam – nur die Daten.",
+        "form_heading": "Platz reservieren",
+        "form": {
+          "name": "Dein Name",
+          "name_ph": "Anna Muster",
+          "email": "E-Mail",
+          "email_ph": "anna@beispiel.ch",
+          "date": "Wunschdatum",
+          "date_flexible": "Ich bin flexibel / informiert mich über neue Termine",
+          "tour": "Route",
+          "tour_any": "Keine Präferenz – überrasch mich",
+          "people": "Anzahl Läufer",
+          "language": "Sprache während des Runs",
+          "message": "Gibt es etwas, das ich wissen sollte?",
+          "message_ph": "Zum ersten Mal in Luzern? Eine Verletzung, auf die ich achten soll? Keine Laufschuhe dabei? Schreib es hier.",
+          "giveaway": "Wähle dein Finisher-Zvieri",
+          "giveaway_options": [
+            "Schweizer Schokolade",
+            "Lokaler Powerriegel",
+            "Mini-Karabiner"
+          ],
+          "consent": "Ich bin einverstanden, dass meine Angaben zur Organisation dieses Runs verwendet werden. Siehe",
+          "consent_link": "Datenschutzerklärung",
+          "submit": "Anfrage senden",
+          "sending": "Wird gesendet…",
+          "success": "Danke! Deine Anfrage ist unterwegs. Ich melde mich innert eines Tages persönlich.",
+          "error": "Da ging etwas schief. Schreib mir bitte direkt an",
+          "required_note": "Mit * markierte Felder sind Pflichtfelder."
+        },
+        "run_open": "Route offen",
+        "run_open_note": "Steht bei einem Termin keine Route, entscheidet die erste Anmeldung — first come, first served. Sobald die Route feststeht, ergänze ich sie hier."
+      },
+      "good_to_know": {
+        "items": [
+          {
+            "title": "Wir laufen im Tempo der Langsamsten",
+            "text": "Die Gruppe richtet sich immer nach der langsamsten Person. Niemand wird abgehängt, und niemand muss sich für sein Tempo entschuldigen."
+          },
+          {
+            "title": "Was du mitbringst",
+            "text": "Laufschuhe und wettertaugliche Kleidung. Wasser gibt es unterwegs. Ohne Laufschuhe unterwegs? Erwähne es bei der Anmeldung."
+          }
+        ]
+      },
+      "meeting": {
+        "heading": "Wo wir uns treffen",
+        "map_consent_title": "Karte wird von Google geladen",
+        "map_consent_text": "Beim Laden der Karte werden deine IP-Adresse und Browserdaten an Google übermittelt. Vor deinem Klick wird nichts geladen.",
+        "map_consent_button": "Karte laden",
+        "open_in_maps": "In Google Maps öffnen"
+      },
+      "about": {
+        "heading": "Dein Guide",
+        "name": "Hallo, ich bin Philippe",
+        "text": "Ich bin Läufer aus Luzern – Trails, Stadtrunden und eine Schwäche für Anstiege, die schlimmer aussehen als sie sind. Wenn ich nicht laufe, findest du mich beim Padel oder auf dem Mountainbike. Hier geboren und zuhause, kenne ich die Strassen, die Steigungen und die Ecken, die es auf keine Karte schaffen.",
+        "text_2": "Meine Idee ist einfach: Läuferinnen und Läufern jeden Levels, Alters und Hintergrunds eine kostenlose und wirklich unterhaltsame Art zu bieten, diese Stadt gemeinsam zu entdecken. Keine Reiseleiterstimme, kein Fähnchen in der Luft. Einfach eine Runde mit jemandem, der sich auskennt.",
+        "languages_label": "Geführt wird auf",
+        "languages_value": "Englisch, Deutsch, Schweizerdeutsch und Französisch",
+        "instagram_label": "Die Runs auf Instagram verfolgen"
+      },
+      "faq": {
+        "heading": "Häufige Fragen",
+        "items": [
+          {
+            "q": "Ist es wirklich gratis?",
+            "a": "Ja. Keine Gebühr, keine Anzahlung, kein Ticket. Run & See ist entstanden, um diese Stadt zu teilen, nicht als Geschäft. Wenn dir der Run gefallen hat, ist ein Trinkgeld am Schluss willkommen – es ist aber komplett dir überlassen, und niemand wird anders behandelt, wenn er nichts gibt."
+          },
+          {
+            "q": "Wie fit muss ich sein?",
+            "a": "Für den Good Morning Scenic Run reicht es, wenn du 5–6 km in einem Tempo läufst, bei dem Reden noch möglich ist. Heritage und Hidden Gems passen für Läuferinnen und Läufer, die regelmässig trainieren. Die Top Views Challenge hat 250–300 Höhenmeter und ist nur für Erfahrene. Egal welche Route: die Gruppe läuft im Tempo der langsamsten Person."
+          },
+          {
+            "q": "In welcher Sprache wird geführt?",
+            "a": "Englisch, Deutsch, Schweizerdeutsch oder Französisch – je nach Gruppe. Gemischte Gruppen landen meist bei Englisch. Gib deine Präferenz bei der Anmeldung an."
+          },
+          {
+            "q": "Wie gross sind die Gruppen?",
+            "a": "Bewusst klein – üblicherweise eine Handvoll Leute. So bleibt die Gruppe an der Ampel zusammen und ein Gespräch möglich. Genau deshalb lohnt es sich, früh zu reservieren."
+          },
+          {
+            "q": "Ich reise ohne Laufschuhe. Kann ich trotzdem mit?",
+            "a": "Möglicherweise. Erwähne es im Nachrichtenfeld bei der Anmeldung, dann schaue ich, was sich in gängigen Grössen organisieren lässt. Keine Garantie, aber fragen kostet nichts."
+          },
+          {
+            "q": "Was passiert bei Regen?",
+            "a": "Wir laufen. Luzern ist auch im Regen schön und die Routen bleiben offen. Abgesagt wird nur bei wirklich gefährlichen Bedingungen – Gewitter, Eis – und dann hörst du per E-Mail von mir."
+          },
+          {
+            "q": "Halten wir für Fotos an?",
+            "a": "Ja. Jede Route hat geplante Stopps an den besten Aussichtspunkten, und für ein Foto anzuhalten ist nie ein Problem. Das ist ein Lauf durch eine Stadt, kein Zeitfahren."
+          },
+          {
+            "q": "Geht auch eine andere Zeit oder Route?",
+            "a": "Oft ja. Schreib mir im Nachrichtenfeld, was dir vorschwebt. Früh morgens, über Mittag und abends funktioniert alles; Gruppen, die zusammen anreisen, bekommen meist einen eigenen Slot."
+          },
+          {
+            "q": "Wo genau treffen wir uns?",
+            "a": "An der Kapellbrücke mitten in Luzern, am südlichen Ende beim Wasserturm. Vom Bahnhof sind es zehn Minuten zu Fuss. Den genauen Punkt und einen Kartenlink bekommst du mit der Bestätigung."
+          },
+          {
+            "q": "Kann ich mein Gepäck irgendwo lassen?",
+            "a": "Nicht am Treffpunkt. Komm mit möglichst wenig, oder nutze auf dem Weg die Schliessfächer im Bahnhof Luzern."
+          }
+        ]
+      },
+      "footer": {
+        "tagline": "Kostenlose geführte Lauftouren in Luzern.",
+        "nav_heading": "Seiten",
+        "legal_heading": "Rechtliches",
+        "imprint": "Impressum",
+        "privacy": "Datenschutz",
+        "established": "Gegründet",
+        "language_heading": "Sprache"
+      },
+      "legal_page": {
+        "title": "Impressum & Datenschutz",
+        "meta_description": "Impressum und Datenschutzerklärung von Run & See Luzern.",
+        "back": "Zurück zur Website",
+        "imprint_heading": "Impressum",
+        "imprint_responsible": "Verantwortlich für diese Website",
+        "contact": "Kontakt",
+        "disclaimer_heading": "Haftungsausschluss",
+        "disclaimer_text": "Die Teilnahme an einem Run & See Lauf ist freiwillig und erfolgt auf eigene Verantwortung. Run & See ist kein gewerblicher Tourenanbieter und hat für Teilnehmende keine Unfall- oder Haftpflichtversicherung abgeschlossen. Bitte stelle sicher, dass du gesundheitlich in der Lage bist zu laufen und über eine eigene Unfallversicherung verfügst – in der Schweiz üblicherweise über die Kranken- oder Arbeitgeberversicherung gedeckt. Die Inhalte dieser Seite wurden nach bestem Wissen erstellt; für ihre Richtigkeit sowie für Inhalte verlinkter externer Websites wird keine Haftung übernommen.",
+        "privacy_heading": "Datenschutzerklärung",
+        "privacy_intro": "Diese Website ist bewusst minimal gehalten. Sie setzt keine Tracking-Cookies und verwendet kein Analyse-Tool.",
+        "privacy_sections": [
+          {
+            "h": "Was erhoben wird",
+            "p": "Nur das, was du im Anmeldeformular einträgst: Name, E-Mail-Adresse, gewähltes Datum und Route, gewünschte Sprache sowie dein Text im Nachrichtenfeld. Sonst nichts."
+          },
+          {
+            "h": "Wozu",
+            "p": "Ausschliesslich zur Organisation des Runs, für den du dich angemeldet hast, und um dich dazu zu kontaktieren. Deine Daten werden nicht verkauft, vermietet oder zu Werbezwecken weitergegeben."
+          },
+          {
+            "h": "Wie lange",
+            "p": "Bis der Run stattgefunden hat, plus eine kurze Zeit danach. Wenn du über künftige Termine informiert werden möchtest, bleibt deine E-Mail-Adresse gespeichert, bis du die Löschung verlangst."
+          },
+          {
+            "h": "Server-Logs",
+            "p": "Der Hosting-Anbieter erfasst übliche Zugriffsprotokolle (IP-Adresse, Zeitpunkt, aufgerufene Seite) zur Sicherheit und Fehlersuche. Diese werden befristet aufbewahrt und nicht mit Formulareingaben verknüpft."
+          },
+          {
+            "h": "Schriften und Karte",
+            "p": "Die Webschriften werden vom eigenen Server ausgeliefert, es gehen also keine Daten an einen Schriftanbieter. Die Google-Maps-Karte beim Treffpunkt wird erst geladen, wenn du sie ausdrücklich anklickst; vorher werden keine Daten an Google übermittelt."
+          },
+          {
+            "h": "Deine Rechte",
+            "p": "Du kannst jederzeit Auskunft über die zu dir gespeicherten Daten verlangen, sie berichtigen oder löschen lassen. Eine kurze E-Mail genügt."
+          }
+        ],
+        "privacy_contact": "Für Fragen zum Datenschutz schreib an",
+        "credits_heading": "Bildnachweis",
+        "credits_intro": "Alle Fotos auf dieser Seite werden mit Erlaubnis verwendet. Quelle und Lizenz je Bild:",
+        "fonts_heading": "Schriften",
+        "fonts_text": "Die Texte werden in den Schriften dargestellt, die auf deinem eigenen Gerät installiert sind; es wird keine Schrift von Dritten nachgeladen. Die Wortmarke im Logo wurde aus Carlito von Łukasz Dziedzic gezeichnet, lizenziert unter der SIL Open Font License 1.1."
+      },
+      "cookie_note": "Diese Seite verwendet keine Tracking-Cookies und kein Analyse-Tool.",
+      "stats_labels": [
+        "Routen zur Auswahl",
+        "Was es dich kostet",
+        "Sprachen unterwegs",
+        "Max. Höhenmeter"
+      ],
+      "sticky": {
+        "text": "Gratis · Kleine Gruppen",
+        "button": "Mitlaufen"
+      },
+      "carousel": {
+        "label": "Touren",
+        "prev": "Vorherige Tour",
+        "next": "Nächste Tour",
+        "goto": "Zu Tour"
+      },
+      "notfound": {
+        "title": "Seite nicht gefunden",
+        "text": "Diese Seite gibt es nicht — oder sie ist umgezogen. Die Runs laufen aber weiter.",
+        "cta": "Zurück zum Anfang",
+        "alt": "Andere Sprachen"
+      }
+    },
+    "fr": {
+      "locale": "fr_CH",
+      "lang_name": "Français",
+      "meta_title": "Courses guidées gratuites à Lucerne | Run & See",
+      "meta_description": "Découvrez Lucerne en courant : course guidée gratuite, petits groupes, guide local. Quatre parcours, quatre langues, tous les niveaux bienvenus.",
+      "og_image_alt": "Le Pont de la Chapelle et la Tour d'eau sur la Reuss à Lucerne, les Alpes en arrière-plan",
+      "nav": {
+        "tours": "Parcours",
+        "how": "Déroulement",
+        "join": "Prochaines courses",
+        "about": "Votre guide",
+        "faq": "FAQ",
+        "cta": "Participer",
+        "aria_main": "Navigation principale",
+        "aria_menu": "Ouvrir le menu",
+        "aria_lang": "Choisir la langue"
+      },
+      "skip_link": "Aller au contenu principal",
+      "hero": {
+        "badge": "Toujours gratuit · Petits groupes",
+        "h1": "Découvrir Lucerne en courant",
+        "lead": "Une course guidée à travers Lucerne – gratuite, avec quelqu'un qui vit vraiment ici. Gardez votre rythme d'entraînement, voyez la ville sous des angles qu'aucun car de tourisme n'atteint, et rencontrez des gens avec qui il fait bon courir.",
+        "cta_primary": "Trouver une course",
+        "cta_secondary": "Voir les quatre parcours",
+        "h1_lines": [
+          "Lucerne",
+          "au pas de course"
+        ]
+      },
+      "value": {
+        "heading": "Pourquoi courir plutôt que marcher",
+        "items": [
+          {
+            "icon": "map",
+            "title": "Plus de ville, moins de temps",
+            "text": "À pied, une heure suffit pour quelques ruelles. En courant, vous couvrez la vieille ville, le lac et un point de vue – et vous rentrez avant votre premier rendez-vous."
+          },
+          {
+            "icon": "user",
+            "title": "Un vrai Lucernois, pas un texte appris",
+            "text": "Né et installé à Lucerne. Vous aurez les histoires, les raccourcis et une réponse honnête quand vous demanderez où mangent vraiment les gens d'ici."
+          },
+          {
+            "icon": "users",
+            "title": "Des gens à rencontrer",
+            "text": "Des groupes volontairement petits. Des coureuses et coureurs du monde entier, en voyage d'affaires ou en vacances, qui préfèrent tous bouger plutôt que faire la queue."
+          },
+          {
+            "icon": "gift",
+            "title": "Gratuit, vraiment",
+            "text": "Pas de billet, pas de frais de réservation, pas d'argumentaire de vente à la fin. Un pourboire est bienvenu si vous avez apprécié, jamais attendu."
+          }
+        ]
+      },
+      "tours_section": {
+        "heading": "Choisissez votre parcours",
+        "intro": "Quatre parcours, quatre ambiances. Choisissez selon la distance et ce que vous voulez voir.",
+        "level_green": "Tous niveaux",
+        "level_orange": "Un peu d'expérience",
+        "level_red": "Coureurs expérimentés",
+        "label_distance": "Distance",
+        "label_pace": "Allure",
+        "label_elevation": "Dénivelé",
+        "label_start": "Départ",
+        "items": {
+          "morning": {
+            "name": "Good Morning Scenic Run",
+            "tagline": "Partir avant la foule",
+            "text": "Une course matinale tranquille le long du lac et à travers la vieille ville, pendant que Lucerne se réveille encore. Les lieux emblématiques sans personne, dans la plus belle lumière du jour. Retour vers 08h00 – à temps pour le petit-déjeuner ou le premier rendez-vous.",
+            "image_alt": "Vue sur le lac des Quatre-Cantons et le Pilate depuis la colline au-dessus de la ville"
+          },
+          "heritage": {
+            "name": "Classic Heritage Run",
+            "tagline": "Les monuments, avec les histoires",
+            "text": "Une boucle reliant le Pont de la Chapelle, le mur de la Musegg, le Lion de Lucerne et les rives du lac. Vous aurez les images de carte postale – et les parties de l'histoire que la carte postale omet. Entièrement plat.",
+            "image_alt": "le Lion de Lucerne sculpté dans la roche — monument sur le parcours Heritage guidé"
+          },
+          "hidden": {
+            "name": "Hidden Gems Run",
+            "tagline": "Le Lucerne des Lucernois",
+            "text": "Cours intérieures, chemins au bord de l'eau, quartiers tranquilles et quelques recoins que peu de visiteurs trouvent. Une tout autre ville que celle des boutiques de souvenirs.",
+            "image_alt": "allée bordée d'arbres à l'ancien cimetière de Propsteimatte à Lucerne"
+          },
+          "views": {
+            "name": "Top Views Challenge",
+            "tagline": "Moins de mots, plus de dénivelé",
+            "text": "Trois montées, trois panoramas : le mur de la Musegg, le Gütsch et le point de vue Konsi, avec le lac et les Alpes en contrebas. Exigeant, et chaque mètre en vaut la peine. Venez avec des jambes habituées aux côtes.",
+            "image_alt": "Vue depuis le Gütsch sur la vieille ville, la Reuss et le lac des Quatre-Cantons"
+          }
+        }
+      },
+      "how": {
+        "heading": "Avant de partir",
+        "steps": [
+          {
+            "title": "Choisir une date et un parcours",
+            "text": "Choisissez parmi les courses ci-dessous. Rien ne convient ? Dites-le dans le champ message."
+          },
+          {
+            "title": "Recevoir la confirmation",
+            "text": "Je réponds personnellement, en général dans la journée, avec le point de rendez-vous exact."
+          },
+          {
+            "title": "Venir et courir",
+            "text": "Nous partons à l'heure, courons ensemble, nous arrêtons là où ça vaut la peine, et revenons au point de départ."
+          },
+          {
+            "title": "Café, facultatif",
+            "text": "La plupart des groupes finissent dans un café ou, en été, dans le lac. Personne n'est obligé de rester – la plupart restent."
+          }
+        ],
+        "know_heading": "Bon à savoir",
+        "meet_heading": "Point de rencontre"
+      },
+      "join": {
+        "heading": "Prochaines courses",
+        "intro": "Les groupes sont volontairement petits, réservez donc tôt.",
+        "empty_title": "Les prochaines dates sont en cours de finalisation",
+        "empty_text": "Laissez votre e-mail ci-dessous et je vous préviens dès qu'elles sont ouvertes. Pas de newsletter, pas de spam – juste les dates.",
+        "form_heading": "Réserver votre place",
+        "form": {
+          "name": "Votre nom",
+          "name_ph": "Marie Dupont",
+          "email": "E-mail",
+          "email_ph": "marie@exemple.ch",
+          "date": "Date souhaitée",
+          "date_flexible": "Je suis flexible / prévenez-moi des nouvelles dates",
+          "tour": "Parcours",
+          "tour_any": "Peu importe – surprenez-moi",
+          "people": "Nombre de coureurs",
+          "language": "Langue souhaitée pendant la course",
+          "message": "Quelque chose que je devrais savoir ?",
+          "message_ph": "Première fois à Lucerne ? Une blessure à ménager ? Pas de chaussures de course avec vous ? Dites-le ici.",
+          "giveaway": "Choisissez votre récompense d'arrivée",
+          "giveaway_options": [
+            "Chocolat suisse",
+            "Barre énergétique locale",
+            "Mini-mousqueton"
+          ],
+          "consent": "J'accepte que mes données soient utilisées pour organiser cette course. Voir la",
+          "consent_link": "politique de confidentialité",
+          "submit": "Envoyer la demande",
+          "sending": "Envoi…",
+          "success": "Merci ! Votre demande est partie. Je vous réponds personnellement dans la journée.",
+          "error": "Une erreur s'est produite. Écrivez-moi directement à",
+          "required_note": "Les champs marqués d'un * sont obligatoires."
+        },
+        "run_open": "Parcours ouvert",
+        "run_open_note": "Si aucun parcours n'est indiqué pour une date, la première inscription décide — premier arrivé, premier servi. J'ajoute le parcours ici dès qu'il est fixé."
+      },
+      "good_to_know": {
+        "items": [
+          {
+            "title": "Nous courons au rythme du plus lent",
+            "text": "Le groupe s'adapte toujours à la personne la plus lente. Personne n'est lâché, et personne n'a à s'excuser de son allure."
+          },
+          {
+            "title": "Ce qu'il faut apporter",
+            "text": "Des chaussures de course et une tenue adaptée à la météo. De l'eau est disponible en chemin. Vous voyagez sans chaussures de course ? Mentionnez-le à l'inscription."
+          }
+        ]
+      },
+      "meeting": {
+        "heading": "Point de rencontre",
+        "map_consent_title": "Carte chargée depuis Google",
+        "map_consent_text": "Charger la carte transmet votre adresse IP et vos données de navigateur à Google. Rien n'est chargé avant votre clic.",
+        "map_consent_button": "Charger la carte",
+        "open_in_maps": "Ouvrir dans Google Maps"
+      },
+      "about": {
+        "heading": "Votre guide",
+        "name": "Bonjour, je suis Philippe",
+        "text": "Je suis coureur, originaire de Lucerne – trails, boucles urbaines et un faible pour les montées qui font plus peur qu'elles ne font mal. Quand je ne cours pas, je joue au padel ou je pédale en VTT. Né et installé ici, je connais les rues, les côtes et les recoins qui ne figurent sur aucune carte.",
+        "text_2": "Mon idée est simple : offrir aux coureurs de tous niveaux, âges et horizons une façon gratuite et réellement agréable de découvrir cette ville ensemble. Pas de voix de guide touristique, pas de fanion en l'air. Juste une course avec quelqu'un qui connaît l'endroit.",
+        "languages_label": "Les courses sont guidées en",
+        "languages_value": "anglais, allemand, suisse allemand et français",
+        "instagram_label": "Suivre les courses sur Instagram"
+      },
+      "faq": {
+        "heading": "Questions fréquentes",
+        "items": [
+          {
+            "q": "Est-ce vraiment gratuit ?",
+            "a": "Oui. Aucun frais, aucun acompte, aucun billet. Run & See est né de l'envie de partager cette ville, pas d'en faire un commerce. Si la course vous a plu, un pourboire à la fin est bienvenu – mais cela reste entièrement votre choix, et personne n'est traité différemment s'il ne donne rien."
+          },
+          {
+            "q": "Quel niveau faut-il avoir ?",
+            "a": "Pour le Good Morning Scenic Run, être à l'aise sur 5–6 km à une allure où l'on peut encore discuter suffit. Heritage et Hidden Gems conviennent aux coureurs qui s'entraînent régulièrement. Le Top Views Challenge compte 250–300 m de dénivelé et s'adresse uniquement aux coureurs expérimentés. Quel que soit le parcours, le groupe court au rythme de la personne la plus lente."
+          },
+          {
+            "q": "Dans quelle langue se déroule la course ?",
+            "a": "Anglais, allemand, suisse allemand ou français – selon le groupe. Les groupes mixtes finissent généralement en anglais. Indiquez votre préférence à l'inscription."
+          },
+          {
+            "q": "Quelle est la taille des groupes ?",
+            "a": "Volontairement petite – généralement une poignée de coureurs. Cela permet de rester groupés aux feux et de pouvoir discuter. C'est aussi pourquoi il vaut mieux réserver tôt."
+          },
+          {
+            "q": "Je voyage sans chaussures de course. Puis-je quand même participer ?",
+            "a": "Peut-être. Mentionnez-le dans le champ message à l'inscription et je verrai ce que je peux organiser dans les tailles courantes. Sans garantie, mais cela vaut la peine de demander."
+          },
+          {
+            "q": "Que se passe-t-il s'il pleut ?",
+            "a": "Nous courons. Lucerne est belle sous la pluie et les parcours restent praticables. Les courses ne sont annulées qu'en cas de conditions réellement dangereuses – orage, verglas – et vous en serez informé par e-mail."
+          },
+          {
+            "q": "S'arrête-t-on pour des photos ?",
+            "a": "Oui. Chaque parcours prévoit des arrêts aux meilleurs points de vue, et s'arrêter pour une photo n'est jamais un problème. C'est une course à travers une ville, pas un contre-la-montre."
+          },
+          {
+            "q": "Peut-on courir à un autre horaire ou sur un autre parcours ?",
+            "a": "Souvent, oui. Dites-moi ce que vous avez en tête dans le champ message. Tôt le matin, à midi ou le soir, tout est possible ; les groupes qui arrivent ensemble obtiennent généralement un créneau dédié."
+          },
+          {
+            "q": "Où se retrouve-t-on exactement ?",
+            "a": "Au Pont de la Chapelle, au centre de Lucerne, à l'extrémité sud près de la Tour d'eau. C'est à dix minutes à pied de la gare. Vous recevrez le point exact et un lien de carte avec votre confirmation."
+          },
+          {
+            "q": "Puis-je laisser mon sac quelque part ?",
+            "a": "Pas au point de rencontre. Venez avec le minimum, ou déposez vos bagages en chemin dans les casiers de la gare de Lucerne."
+          }
+        ]
+      },
+      "footer": {
+        "tagline": "Courses guidées gratuites à Lucerne, Suisse.",
+        "nav_heading": "Pages",
+        "legal_heading": "Mentions légales",
+        "imprint": "Mentions légales",
+        "privacy": "Confidentialité",
+        "established": "Fondé en",
+        "language_heading": "Langue"
+      },
+      "legal_page": {
+        "title": "Mentions légales & confidentialité",
+        "meta_description": "Mentions légales et politique de confidentialité de Run & See Lucerne.",
+        "back": "Retour au site",
+        "imprint_heading": "Mentions légales",
+        "imprint_responsible": "Responsable de ce site",
+        "contact": "Contact",
+        "disclaimer_heading": "Clause de non-responsabilité",
+        "disclaimer_text": "La participation à une course Run & See est volontaire et se fait sous votre propre responsabilité. Run & See n'est pas un voyagiste commercial et n'a souscrit aucune assurance accident ou responsabilité civile pour les participants. Assurez-vous d'être en état de courir et de disposer de votre propre assurance accident – en Suisse, généralement couverte par l'assurance maladie ou l'employeur. Les contenus de ce site ont été rédigés de bonne foi ; aucune responsabilité n'est assumée quant à leur exactitude ni quant au contenu des sites externes liés.",
+        "privacy_heading": "Politique de confidentialité",
+        "privacy_intro": "Ce site est volontairement minimal. Il ne dépose aucun cookie de suivi et n'utilise aucun outil d'analyse.",
+        "privacy_sections": [
+          {
+            "h": "Données collectées",
+            "p": "Uniquement ce que vous saisissez dans le formulaire d'inscription : nom, adresse e-mail, date et parcours choisis, langue souhaitée et le texte du champ message. Rien d'autre."
+          },
+          {
+            "h": "Finalité",
+            "p": "Exclusivement l'organisation de la course pour laquelle vous vous êtes inscrit et la prise de contact à ce sujet. Vos données ne sont ni vendues, ni louées, ni transmises à des tiers à des fins publicitaires."
+          },
+          {
+            "h": "Durée de conservation",
+            "p": "Jusqu'à la tenue de la course, plus une courte période ensuite. Si vous souhaitez être informé des dates futures, votre adresse e-mail est conservée jusqu'à votre demande de suppression."
+          },
+          {
+            "h": "Journaux serveur",
+            "p": "L'hébergeur enregistre des journaux d'accès standards (adresse IP, horodatage, page demandée) à des fins de sécurité et de dépannage. Ils sont conservés pour une durée limitée et ne sont pas liés aux envois de formulaire."
+          },
+          {
+            "h": "Polices et carte",
+            "p": "Les polices web sont servies depuis le serveur de ce site ; aucune donnée n'est transmise à un fournisseur de polices. La carte Google Maps du point de rencontre n'est chargée qu'après un clic explicite de votre part ; avant cela, aucune donnée n'est envoyée à Google."
+          },
+          {
+            "h": "Vos droits",
+            "p": "Vous pouvez à tout moment demander quelles données vous concernant sont conservées, les faire rectifier ou supprimer. Un simple e-mail suffit."
+          }
+        ],
+        "privacy_contact": "Pour toute question relative à la confidentialité, écrivez à",
+        "credits_heading": "Crédits photographiques",
+        "credits_intro": "Toutes les photographies de ce site sont utilisées avec autorisation. Source et licence par image :",
+        "fonts_heading": "Polices de caractères",
+        "fonts_text": "Les textes utilisent les polices déjà installées sur votre appareil ; aucune n'est chargée depuis un tiers. Le logotype a été dessiné à partir de Carlito de Łukasz Dziedzic, sous licence SIL Open Font License 1.1."
+      },
+      "cookie_note": "Ce site n'utilise aucun cookie de suivi ni outil d'analyse.",
+      "stats_labels": [
+        "Parcours au choix",
+        "Ce que ça vous coûte",
+        "Langues possibles",
+        "Dénivelé max."
+      ],
+      "sticky": {
+        "text": "Gratuit · Petits groupes",
+        "button": "Participer"
+      },
+      "carousel": {
+        "label": "Parcours",
+        "prev": "Parcours précédent",
+        "next": "Parcours suivant",
+        "goto": "Aller au parcours"
+      },
+      "notfound": {
+        "title": "Page introuvable",
+        "text": "Cette page n'existe pas — ou elle a déménagé. Les courses, elles, continuent.",
+        "cta": "Retour à l'accueil",
+        "alt": "Autres langues"
+      }
+    }
+  },
+  "stats": [
+    {
+      "num": "4",
+      "unit": ""
+    },
+    {
+      "num": "0",
+      "unit": "CHF"
+    },
+    {
+      "num": "4",
+      "unit": ""
+    },
+    {
+      "num": "300",
+      "unit": "m"
+    }
+  ]
+}

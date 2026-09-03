@@ -1,0 +1,10 @@
+# Originalfotos bleiben lokal — sie werden mit tools/bilder-holen.cmd geholt
+assets/images/_originals/
+
+# Design-Vorschauen sind nicht zum Veroeffentlichen gedacht
+preview/
+
+# Protokolle der Hilfsskripte
+tools/*.log
+
+deploy-key.txt

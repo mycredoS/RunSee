@@ -1,0 +1,44 @@
+# Run & See Lucerne
+# Die Seite soll gefunden werden — von Suchmaschinen und von KI-Assistenten.
+# Alles ist bewusst freigegeben. Wer einzelne Bots aussperren will, ergaenzt
+# hier einen Block mit Disallow; robots.txt ist allerdings nur eine Bitte,
+# keine technische Sperre.
+
+User-agent: *
+Allow: /
+
+# Klassische Suche
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+# KI-Assistenten, die live abrufen und Quellen verlinken.
+# Diese ausdruecklich zuzulassen ist die Voraussetzung dafuer, in Antworten
+# auf Fragen wie "free running tour Lucerne" ueberhaupt zitiert zu werden.
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Trainings-Crawler. Ebenfalls erlaubt — bei einem kostenlosen Angebot ohne
+# schuetzenswerte Inhalte ueberwiegt die Sichtbarkeit. Zum Aussperren
+# "Allow: /" durch "Disallow: /" ersetzen.
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://www.runandsee.ch/sitemap.xml
