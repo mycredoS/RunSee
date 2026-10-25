@@ -8,3 +8,6 @@ preview/
 tools/*.log
 
 deploy-key.txt
+
+# Dateien, die der Desktop-App beim Senden ablegt
+Claude outputs/

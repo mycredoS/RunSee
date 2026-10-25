@@ -4,8 +4,8 @@
     "domain": "https://www.runandsee.ch",
     "brand": "Run & See Lucerne",
     "established": 2026,
-    "instagram_handle": "runandsee_lucerne",
-    "instagram_url": "https://www.instagram.com/runandsee_lucerne",
+    "instagram_handle": "",
+    "instagram_url": "",
     "strava_club_url": "",
     "whatsapp_url": "",
     "contact_email": "philippe@runandsee.ch",
@@ -57,7 +57,7 @@
       },
       {
         "date": "2026-09-17",
-        "time": "11:30",
+        "time": "11:45",
         "tours": []
       },
       {

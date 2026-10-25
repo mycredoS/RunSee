@@ -576,6 +576,7 @@ def join_section(cfg, content, t, lang, base):
         date_options = []
 
     date_options.append(f'<option value="flexible">{E(f["date_flexible"])}</option>')
+    date_options.append(f'<option value="other">{E(f["date_other"])}</option>')
 
     tour_options = "\n".join(
         f'            <option value="{E(tour["id"])}">{E(ts_items[tour["id"]]["name"])}</option>'
@@ -670,6 +671,33 @@ def join_section(cfg, content, t, lang, base):
 
 
 
+def ig_link_block(cfg, a):
+    """Instagram-Verweis im Guide-Abschnitt. Leer, solange keine URL gesetzt ist."""
+    url = cfg["site"].get("instagram_url") or ""
+    if not url:
+        return ""
+    return (
+        f'        <a class="ig-link" href="{E(url)}" target="_blank" rel="noopener noreferrer">\n'
+        f'          {icon("user")}{E(a["instagram_label"])}\n'
+        f'        </a>\n'
+    )
+
+
+def ig_footer_item(cfg):
+    """Instagram in der Fusszeile. Leer, solange keine URL gesetzt ist."""
+    url = cfg["site"].get("instagram_url") or ""
+    if not url:
+        return ""
+    return f'          <li><a href="{E(url)}" target="_blank" rel="noopener noreferrer">Instagram</a></li>\n'
+
+
+def contact_line(cfg):
+    """Kontaktzeile fuer llms.txt, ohne Instagram solange keine URL gesetzt ist."""
+    url = cfg["site"].get("instagram_url") or ""
+    mail = cfg["site"]["contact_email"]
+    return f"{mail} · {url}" if url else mail
+
+
 def about_section(cfg, t, base):
     a = t["about"]
     return f"""<section id="about" aria-labelledby="about-h">
@@ -689,10 +717,7 @@ def about_section(cfg, t, base):
         <p>{E(a['text'])}</p>
         <p>{E(a['text_2'])}</p>
         <p class="about-meta"><b>{E(a['languages_label'])}:</b> {E(a['languages_value'])}</p>
-        <a class="ig-link" href="{E(cfg['site']['instagram_url'])}" target="_blank" rel="noopener noreferrer">
-          {icon('user')}{E(a['instagram_label'])}
-        </a>
-      </div>
+{ig_link_block(cfg, a)}      </div>
     </div>
   </div>
 </section>"""
@@ -758,8 +783,7 @@ def footer(cfg, t, lang, base, content):
         <ul>
           <li><a href="{legal}#imprint">{E(fo['imprint'])}</a></li>
           <li><a href="{legal}#privacy">{E(fo['privacy'])}</a></li>
-          <li><a href="{E(cfg['site']['instagram_url'])}" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        </ul>
+{ig_footer_item(cfg)}        </ul>
       </div>
       <div>
         <h4>{E(fo['language_heading'])}</h4>
@@ -871,7 +895,14 @@ def page_script(cfg, content, t, lang):
     var now = new Date();
     for (var i = 0; i < CFG.runs.length; i++) {
       var r = CFG.runs[i];
-      var when = new Date(r.date + "T" + (r.time || "00:00") + ":00");
+      // Datum und Zeit einzeln zerlegen. Ein zusammengesetzter String wird
+      // nicht von jedem Browser gleich geparst; kommt dabei ein ungueltiges
+      // Datum heraus, rechnet der Countdown mit NaN weiter.
+      var dp = String(r.date || "").split("-");
+      var tp = String(r.time || "00:00").split(":");
+      if (dp.length < 3) { continue; }
+      var when = new Date(+dp[0], +dp[1] - 1, +dp[2], +tp[0] || 0, +tp[1] || 0, 0, 0);
+      if (!isFinite(when.getTime())) { continue; }
       if (when > now) { next = { when: when, label: r.label }; break; }
     }
     if (next) {
@@ -880,8 +911,8 @@ def page_script(cfg, content, t, lang):
       document.getElementById("countdown-run").textContent = next.label;
       var clock = document.getElementById("countdown-clock");
       var tick = function () {
-        var diff = next.when - new Date();
-        if (diff <= 0) { cd.hidden = true; return; }
+        var diff = next.when.getTime() - Date.now();
+        if (!isFinite(diff) || diff <= 0) { cd.hidden = true; return; }
         var d = Math.floor(diff / 86400000);
         var h = Math.floor((diff %% 86400000) / 3600000);
         var m = Math.floor((diff %% 3600000) / 60000);
@@ -1647,7 +1678,7 @@ run at the pace of the slowest participant. Meeting point is the
 
 ## Contact
 
-{cfg['site']['contact_email']} · {cfg['site']['instagram_url']}
+{contact_line(cfg)}
 """
 
 

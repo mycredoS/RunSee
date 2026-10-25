@@ -18,28 +18,27 @@
       "id": "heritage",
       "image": "tour-heritage",
       "level": "orange",
-      "km": "7–8 km",
-      "mi": "4.3–5.0 mi",
+      "km": "7–7.5 km",
+      "mi": "4.3–4.7 mi",
       "pace": "6:00–6:30 min/km",
       "pace_mi": "9:40–10:30 min/mi",
       "elevation": "",
       "times": [
-        "11:30",
+        "11:45",
         "17:30"
-      ],
-      "_TODO": "Startzeiten 11:30/17:30 aus dem Input-Dokument. Die alte Website nannte 11:45. Bitte final festlegen."
+      ]
     },
     {
       "id": "hidden",
       "image": "tour-hidden-gems",
       "level": "orange",
-      "km": "7–8 km",
-      "mi": "4.3–5.0 mi",
+      "km": "7–7.5 km",
+      "mi": "4.3–4.7 mi",
       "pace": "6:00–6:30 min/km",
       "pace_mi": "9:40–10:30 min/mi",
       "elevation": "",
       "times": [
-        "11:30",
+        "11:45",
         "17:30"
       ]
     },
@@ -185,6 +184,7 @@
           "email_ph": "jane@example.com",
           "date": "Preferred date",
           "date_flexible": "I'm flexible / notify me about new dates",
+          "date_other": "A different time: it might work out",
           "tour": "Route",
           "tour_any": "No preference — surprise me",
           "people": "Number of runners",
@@ -255,7 +255,7 @@
           },
           {
             "q": "What happens if it rains?",
-            "a": "We run. Lucerne is beautiful in the rain and the routes stay open. Runs are only called off in genuinely unsafe conditions — thunderstorms, ice — and you'll hear from me by email if that happens."
+            "a": "We always run. Lucerne gets warmer every year, but it also has more rainy days than most Swiss cities. Our skin is waterproof. Only thunder or ice stops us, and then you'll hear from me."
           },
           {
             "q": "Do you stop for photos?",
@@ -268,6 +268,10 @@
           {
             "q": "Where exactly do we meet?",
             "a": "At the Chapel Bridge in the centre of Lucerne, at the southern end next to the Water Tower — ten minutes on foot from the main station. You'll get the exact spot and a map link with your confirmation."
+          },
+          {
+            "q": "What if I'm late?",
+            "a": "Please be on time. I'm Swiss. We wait five minutes, then we run."
           },
           {
             "q": "Is there somewhere to leave my bag?",
@@ -478,6 +482,7 @@
           "email_ph": "anna@beispiel.ch",
           "date": "Wunschdatum",
           "date_flexible": "Ich bin flexibel / informiert mich über neue Termine",
+          "date_other": "Eine andere Zeit: Vielleicht klappt es",
           "tour": "Route",
           "tour_any": "Keine Präferenz – überrasch mich",
           "people": "Anzahl Läufer",
@@ -548,7 +553,7 @@
           },
           {
             "q": "Was passiert bei Regen?",
-            "a": "Wir laufen. Luzern ist auch im Regen schön und die Routen bleiben offen. Abgesagt wird nur bei wirklich gefährlichen Bedingungen – Gewitter, Eis – und dann hörst du per E-Mail von mir."
+            "a": "Wir laufen immer. Luzern wird jedes Jahr wärmer, hat aber auch mehr Regentage als die meisten Schweizer Städte. Unsere Haut ist wasserdicht. Nur Gewitter oder Eis stoppen uns, dann hörst du von mir."
           },
           {
             "q": "Halten wir für Fotos an?",
@@ -561,6 +566,10 @@
           {
             "q": "Wo genau treffen wir uns?",
             "a": "An der Kapellbrücke mitten in Luzern, am südlichen Ende beim Wasserturm. Vom Bahnhof sind es zehn Minuten zu Fuss. Den genauen Punkt und einen Kartenlink bekommst du mit der Bestätigung."
+          },
+          {
+            "q": "Was, wenn ich zu spät komme?",
+            "a": "Bitte sei pünktlich. Ich bin Schweizer. Wir warten fünf Minuten, dann laufen wir los."
           },
           {
             "q": "Kann ich mein Gepäck irgendwo lassen?",
@@ -771,6 +780,7 @@
           "email_ph": "marie@exemple.ch",
           "date": "Date souhaitée",
           "date_flexible": "Je suis flexible / prévenez-moi des nouvelles dates",
+          "date_other": "Un autre horaire : c'est peut-être possible",
           "tour": "Parcours",
           "tour_any": "Peu importe – surprenez-moi",
           "people": "Nombre de coureurs",
@@ -841,7 +851,7 @@
           },
           {
             "q": "Que se passe-t-il s'il pleut ?",
-            "a": "Nous courons. Lucerne est belle sous la pluie et les parcours restent praticables. Les courses ne sont annulées qu'en cas de conditions réellement dangereuses – orage, verglas – et vous en serez informé par e-mail."
+            "a": "Nous courons toujours. Lucerne se réchauffe chaque année, mais compte aussi plus de jours de pluie que la plupart des villes suisses. Notre peau est imperméable. Seuls l'orage ou le verglas nous arrêtent, et vous serez prévenu."
           },
           {
             "q": "S'arrête-t-on pour des photos ?",
@@ -854,6 +864,10 @@
           {
             "q": "Où se retrouve-t-on exactement ?",
             "a": "Au Pont de la Chapelle, au centre de Lucerne, à l'extrémité sud près de la Tour d'eau. C'est à dix minutes à pied de la gare. Vous recevrez le point exact et un lien de carte avec votre confirmation."
+          },
+          {
+            "q": "Et si je suis en retard ?",
+            "a": "Merci d'être à l'heure. Je suis suisse. Nous attendons cinq minutes, puis nous partons."
           },
           {
             "q": "Puis-je laisser mon sac quelque part ?",

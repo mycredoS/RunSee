@@ -944,7 +944,6 @@ footer a:hover { color: var(--footer-head); text-decoration: underline; text-und
         <ul>
           <li><a href="legal.html#imprint">Impressum</a></li>
           <li><a href="legal.html#privacy">Datenschutz</a></li>
-          <li><a href="https://www.instagram.com/runandsee_lucerne" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         </ul>
       </div>
       <div>
@@ -965,7 +964,7 @@ footer a:hover { color: var(--footer-head); text-decoration: underline; text-und
 <script>
 (function () {
   "use strict";
-  var CFG = {"provider": "mailto", "endpoint": "TODO_https://formspree.io/f/xxxxxxx", "email": "philippe@runandsee.ch", "runs": [{"date": "2026-09-16", "time": "07:15", "label": "Good Morning Scenic Run"}, {"date": "2026-09-17", "time": "11:30", "label": "Route offen"}, {"date": "2026-09-17", "time": "17:30", "label": "Route offen"}], "labels": {"cd": "Nächster Run in", "d": "Tage", "h": "Std", "m": "Min"}, "msgSuccess": "Danke! Deine Anfrage ist unterwegs. Ich melde mich innert eines Tages persönlich.", "msgError": "Da ging etwas schief. Schreib mir bitte direkt an", "msgSending": "Wird gesendet…", "msgSubmit": "Anfrage senden", "brand": "Run & See Lucerne"};
+  var CFG = {"provider": "mailto", "endpoint": "TODO_https://formspree.io/f/xxxxxxx", "email": "philippe@runandsee.ch", "runs": [], "labels": {"cd": "Nächster Run in", "d": "Tage", "h": "Std", "m": "Min"}, "msgSuccess": "Danke! Deine Anfrage ist unterwegs. Ich melde mich innert eines Tages persönlich.", "msgError": "Da ging etwas schief. Schreib mir bitte direkt an", "msgSending": "Wird gesendet…", "msgSubmit": "Anfrage senden", "brand": "Run & See Lucerne"};
 
   /* ── Navbar: Scroll-Zustand ────────────────────────────────────────── */
   var navbar = document.getElementById("navbar");
@@ -1024,7 +1023,14 @@ footer a:hover { color: var(--footer-head); text-decoration: underline; text-und
     var now = new Date();
     for (var i = 0; i < CFG.runs.length; i++) {
       var r = CFG.runs[i];
-      var when = new Date(r.date + "T" + (r.time || "00:00") + ":00");
+      // Datum und Zeit einzeln zerlegen. Ein zusammengesetzter String wird
+      // nicht von jedem Browser gleich geparst; kommt dabei ein ungueltiges
+      // Datum heraus, rechnet der Countdown mit NaN weiter.
+      var dp = String(r.date || "").split("-");
+      var tp = String(r.time || "00:00").split(":");
+      if (dp.length < 3) { continue; }
+      var when = new Date(+dp[0], +dp[1] - 1, +dp[2], +tp[0] || 0, +tp[1] || 0, 0, 0);
+      if (!isFinite(when.getTime())) { continue; }
       if (when > now) { next = { when: when, label: r.label }; break; }
     }
     if (next) {
@@ -1033,8 +1039,8 @@ footer a:hover { color: var(--footer-head); text-decoration: underline; text-und
       document.getElementById("countdown-run").textContent = next.label;
       var clock = document.getElementById("countdown-clock");
       var tick = function () {
-        var diff = next.when - new Date();
-        if (diff <= 0) { cd.hidden = true; return; }
+        var diff = next.when.getTime() - Date.now();
+        if (!isFinite(diff) || diff <= 0) { cd.hidden = true; return; }
         var d = Math.floor(diff / 86400000);
         var h = Math.floor((diff % 86400000) / 3600000);
         var m = Math.floor((diff % 3600000) / 60000);
